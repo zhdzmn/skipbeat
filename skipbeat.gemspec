@@ -9,14 +9,14 @@ Gem::Specification.new do |s|
   s.version     = Skipbeat::VERSION
   s.authors     = ["A K M Zahiduzzaman"]
   s.email       = ["zhd.zmn@gmail.com"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of Skipbeat."
-  s.description = "TODO: Description of Skipbeat."
+  s.homepage    = "http://github.com/zhdzmn/skipbeat"
+  s.summary     = "A scheduling plugin with ice_cube"
+  s.description = "A scheduling plugin with ice_cube"
 
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
+  s.test_files = Dir["test/**/*"]
 
   s.add_dependency "rails", "~> 3.2.13"
-  # s.add_dependency "jquery-rails"
+  s.add_dependency "ice_cube", "0.11.0"
 
-  s.add_development_dependency "sqlite3"
 end
